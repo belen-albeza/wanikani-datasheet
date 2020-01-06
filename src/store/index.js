@@ -77,7 +77,6 @@ const actions = {
     if (progression) {
       // filter out levels which have been abandoned
       // and convert string to date objects
-      console.log(progression);
       progression = progression
         .filter(x => x.abandoned_at === null)
         .map(x => {
